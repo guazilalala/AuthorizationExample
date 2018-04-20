@@ -1,0 +1,12 @@
+D:\GitHub\AuthorizationExample\AuthorizationExample\bin\Debug\netcoreapp2.0\AuthorizationExample.deps.json
+D:\GitHub\AuthorizationExample\AuthorizationExample\bin\Debug\netcoreapp2.0\AuthorizationExample.runtimeconfig.json
+D:\GitHub\AuthorizationExample\AuthorizationExample\bin\Debug\netcoreapp2.0\AuthorizationExample.runtimeconfig.dev.json
+D:\GitHub\AuthorizationExample\AuthorizationExample\bin\Debug\netcoreapp2.0\AuthorizationExample.dll
+D:\GitHub\AuthorizationExample\AuthorizationExample\bin\Debug\netcoreapp2.0\AuthorizationExample.pdb
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\AuthorizationExample.csprojResolveAssemblyReference.cache
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\AuthorizationExample.csproj.CoreCompileInputs.cache
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\AuthorizationExample.AssemblyInfoInputs.cache
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\AuthorizationExample.AssemblyInfo.cs
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\AuthorizationExample.dll
+D:\GitHub\AuthorizationExample\AuthorizationExample\obj\Debug\netcoreapp2.0\AuthorizationExample.pdb
