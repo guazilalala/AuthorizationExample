@@ -19,13 +19,13 @@ namespace AuthorizationExample.Authorization
 			}
 
 			//如果不请求批准/拒绝，返回。
-			if (requirement.Name != ContactOperations.ApproveOperationName&&
-				requirement.Name != ContactOperations.RejectOperationName)
+			if (requirement.Name != Constants.ApproveOperationName&&
+				requirement.Name != Constants.RejectOperationName)
 			{
 				return Task.CompletedTask;
 			}
 
-			if (context.User.IsInRole(ContactOperations.ContactManagersRole))
+			if (context.User.IsInRole(Constants.ContactManagersRole))
 			{
 				context.Succeed(requirement);
 			}

@@ -19,7 +19,7 @@ namespace AuthorizationExample.Authorization
 			}
 
 			//管理员可以做任何事情。
-			if (context.User.IsInRole(ContactOperations.ContactAdministratorsRole))
+			if (context.User.IsInRole(Constants.ContactAdministratorsRole))
 			{
 				context.Succeed(requirement);
 			}

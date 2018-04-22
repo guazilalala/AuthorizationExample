@@ -34,7 +34,7 @@ namespace AuthorizationExample.Data
 			if (user == null)
 			{
 				user = new ApplicationUser { UserName = UserName };
-				await userManager.CreateAsync(user, testUserPw);
+				await userManager.CreateAsync(user, testUserPw);		
 			}
 			return user.Id;
 		}
@@ -47,11 +47,11 @@ namespace AuthorizationExample.Data
 
 			if (!await roleManager.RoleExistsAsync(role))
 			{
-				IR = await roleManager.CreateAsync(new IdentityRole());
+				IR = await roleManager.CreateAsync(new IdentityRole(role));
 			}
 
 			var userManager = serviceProvider.GetService<UserManager<ApplicationUser>>();
-			var user = await userManager.FindByEmailAsync(uid);
+			var user = await userManager.FindByIdAsync(uid);
 
 			IR = await userManager.AddToRoleAsync(user, role);
 

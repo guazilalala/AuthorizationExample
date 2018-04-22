@@ -119,7 +119,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.dll": {}
         }
       },
-      "Microsoft.AspNetCore.All/2.0.6": {
+      "Microsoft.AspNetCore.All/2.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore": "2.0.2",
@@ -5112,10 +5112,10 @@
         "microsoft.aspnetcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.All/2.0.6": {
-      "sha512": "5AEYk4hS25RcPkh1kWeKpn487/9Bb3GeVfu8Sl7EOFv9ADXmz7ypVyVlp8FMwgQIJSykzy6kF6KOOduhrWGmSA==",
+    "Microsoft.AspNetCore.All/2.0.7": {
+      "sha512": "hpWBRgs094P0jBWJRqBV+8oXl6G+O5ixDAgXI5qouOsg2jlLOmYr1+95+lRbLSn31HhKbQdNel6VQSDUbm0juw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.all/2.0.6",
+      "path": "microsoft.aspnetcore.all/2.0.7",
       "files": [
         "build/PublishWithAspNetCoreTargetManifest.targets",
         "build/aspnetcore-store-2.0.0-common.xml",
@@ -5126,9 +5126,10 @@
         "build/aspnetcore-store-2.0.3.xml",
         "build/aspnetcore-store-2.0.5.xml",
         "build/aspnetcore-store-2.0.6.xml",
+        "build/aspnetcore-store-2.0.7.xml",
         "build/netcoreapp2.0/Microsoft.AspNetCore.All.targets",
         "lib/netcoreapp2.0/_._",
-        "microsoft.aspnetcore.all.2.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.all.2.0.7.nupkg.sha512",
         "microsoft.aspnetcore.all.nuspec"
       ]
     },
@@ -6208,7 +6209,7 @@
       ]
     },
     "Microsoft.Data.Edm/5.8.2": {
-      "sha512": "P/d8DxA6MFHroBEn/jW0LMQSIKnsRRibrZtRCLfov2boQfrQ1R1BVgkJ5oIhcQsOm0l4POv+I2ny6RBsclNbOw==",
+      "sha512": "YqPWJ75vk/oCo4cE8UZl6yKQ48ciFF+m8puC2Bfp5IeoFmdumKFTElL6nESvZdKghXFCSRiDTD3GWWVR5JMRLA==",
       "type": "package",
       "path": "microsoft.data.edm/5.8.2",
       "files": [
@@ -6272,7 +6273,7 @@
       ]
     },
     "Microsoft.Data.OData/5.8.2": {
-      "sha512": "oEIUtXcRiKogF0yZxA+QdgxoBJ34989qL/5xOSrTfxAhzNJV5Hw6DRdWgUCpeXFMoJUQx7ptbHCN+My/LCQfsg==",
+      "sha512": "e/ZnhR5h/nqG4qDIpoYXD6zuTqLw3ItO6RPjsaUrUqubt/wujbR373qzCtwJcXSdA6ic1ewEeM/3ni02Qttssw==",
       "type": "package",
       "path": "microsoft.data.odata/5.8.2",
       "files": [
@@ -7965,7 +7966,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+      "sha512": "VVbvn0RKUaaYdhxVI+5quikz7eNen8rlitxHs0uwCwKT3oFKXipSrXYqYgA2iEzBKlBD7c54oGSv6nhXg0WyzA==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "files": [
@@ -7989,7 +7990,7 @@
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
-      "sha512": "5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "sha512": "UE7RQvN8qKhJ067S9WiR1p4s7OkhUaccWVg67cSVEvs1wJP4PELU1FgvWKoQ8F/yN+iO7PXakKZjMrQlzVj/mg==",
       "type": "package",
       "path": "newtonsoft.json.bson/1.0.1",
       "files": [
@@ -8002,7 +8003,7 @@
       ]
     },
     "NuGet.Frameworks/4.0.0": {
-      "sha512": "WCkN68c8q+USG+Ot1MmBDH+9DUo5dk7UB0QDMiwCYhrH7ZoFLKFGGNzJ8C3LTR1DvB1LW9BOxKeznnZznKiCTA==",
+      "sha512": "uBu2N9HDvGHso7umfG1Abud0KDFgysp8FYwq3qMDhSXiW5+NIUPU0Q/A547Wt5FKcozq6H2WX+YBa1ejyKaKeA==",
       "type": "package",
       "path": "nuget.frameworks/4.0.0",
       "files": [
@@ -9293,7 +9294,7 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
+      "sha512": "rZOP+iRaabpnLYzt+H0R9HGG2P3frcjqOBix6r7guEhFe88XFBOLvIh3Z3vu/cb2MfzPxmT1iPouRwbsoTHOOw==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
@@ -9739,7 +9740,7 @@
       ]
     },
     "System.Interactive.Async/3.1.1": {
-      "sha512": "hZccYiIE5RS1/J9Tb/BNtosAGVggdlsJm4Ojdu+gDV0p4AIi+LUfUogMKkRacljQEJd2AG6vYzvcjhQFkqoZmw==",
+      "sha512": "OMgAEMkuqmM4r2ZgIzGqQHiFezSjnpmxM9sbQOuKvdTY265ZVw+A6fCRXaaXXFiaYUjY9vW7Gne4m1GZxxsT+g==",
       "type": "package",
       "path": "system.interactive.async/3.1.1",
       "files": [
@@ -11479,7 +11480,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "E44bIc3djyn6YePxzG0s+YwyDW6G4odVjjZnki4qkNOqW+IsEci64cWT00mxmbvbQ8RtGlvq4/Kh6M5IkueIxw==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -12052,7 +12053,7 @@
       ]
     },
     "System.Spatial/5.8.2": {
-      "sha512": "0RfZZJ8RlrfjoBPAF6pczX4Nd2kyLM8EX1PCP5Rqs/jOhJBUPYhpXjIsVAYN7kocj9IJ9XoJWAxWgXIDtJY2Ag==",
+      "sha512": "Lo7u2LFnqjNfePMZfbcAgK6XXrpiJGvB0YC5x2XYJYuPnVqRHREjwDmqcc2TZdGsTHVTg97nTeMH5d7sFeDc3g==",
       "type": "package",
       "path": "system.spatial/5.8.2",
       "files": [
@@ -13020,7 +13021,7 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
+      "sha512": "LQvJP6inrG/Nti5ZuUWXnQSmpgUaPTZFRCNJAtZNTCjEfzDh4+U/SYVxo5LkfeDfCxJ3bf3xj2KdwhOYbAp39A==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
@@ -13057,7 +13058,7 @@
       ]
     },
     "System.Xml.XPath.XDocument/4.3.0": {
-      "sha512": "jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
+      "sha512": "QSCQgvzonkgb1O05GE6BtlvFwvImUbIiFD4c3jwX5i+dmvAvSDCNknx3LFTAQ1QVz+gHHzcUYAsRfygzEZF+KA==",
       "type": "package",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "files": [
@@ -13118,7 +13119,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.AspNetCore.All >= 2.0.6",
+      "Microsoft.AspNetCore.All >= 2.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.2",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
@@ -13126,34 +13127,31 @@
   },
   "packageFolders": {
     "C:\\Users\\Feet\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\AuthorizationExample\\AuthorizationExample\\AuthorizationExample.csproj",
+      "projectUniqueName": "G:\\GitHub\\AuthorizationExample\\AuthorizationExample.csproj",
       "projectName": "AuthorizationExample",
-      "projectPath": "D:\\GitHub\\AuthorizationExample\\AuthorizationExample\\AuthorizationExample.csproj",
+      "projectPath": "G:\\GitHub\\AuthorizationExample\\AuthorizationExample.csproj",
       "packagesPath": "C:\\Users\\Feet\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\AuthorizationExample\\AuthorizationExample\\obj\\",
+      "outputPath": "G:\\GitHub\\AuthorizationExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Feet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.cnblogs.com/v3/index.json": {}
+        "C:\\Users\\Feet\\.dotnet\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -13171,7 +13169,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.6, )"
+            "version": "[2.0.7, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "suppressParent": "All",

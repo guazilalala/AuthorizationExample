@@ -28,10 +28,10 @@ namespace AuthorizationExample.Authorization
 
 			//如果我们不要求得到CRUD许可，请返回。
 
-			if (requirement.Name != ContactOperations.CreateOperationName && 
-				requirement.Name != ContactOperations.ReadOperationName &&
-				requirement.Name != ContactOperations.UpdateOperationName &&
-				requirement.Name != ContactOperations.DeleteOperationName)
+			if (requirement.Name != Constants.CreateOperationName && 
+				requirement.Name != Constants.ReadOperationName &&
+				requirement.Name != Constants.UpdateOperationName &&
+				requirement.Name != Constants.DeleteOperationName)
 			{
 				return Task.CompletedTask;
 			}

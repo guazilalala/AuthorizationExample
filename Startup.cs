@@ -11,6 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AuthorizationExample.Data;
 using AuthorizationExample.Services;
+using Microsoft.AspNetCore.Authorization;
+using AuthorizationExample.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace AuthorizationExample
 {
@@ -33,20 +36,34 @@ namespace AuthorizationExample
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddMvc()
-                .AddRazorPagesOptions(options =>
-                {
-                    options.Conventions.AuthorizeFolder("/Account/Manage");
-                    options.Conventions.AuthorizePage("/Account/Logout");
-                });
+			services.AddMvc()
+				.AddRazorPagesOptions(options =>
+				{
+					options.Conventions.AuthorizeFolder("/Account/Manage");
+					options.Conventions.AuthorizePage("/Account/Logout");
+				});
 
-            // Register no-op EmailSender used by account confirmation and password reset during development
-            // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=532713
-            services.AddSingleton<IEmailSender, EmailSender>();
-        }
+			// Register no-op EmailSender used by account confirmation and password reset during development
+			// For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=532713
+			services.AddSingleton<IEmailSender, EmailSender>();
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+			//services.AddMvc(config=> 
+			//{
+			//	var policy = new AuthorizationPolicyBuilder()
+			//					.RequireAuthenticatedUser()
+			//					.Build();
+			//	config.Filters.Add(new AuthorizeFilter(policy));
+			//});
+
+			// Authorization handlers
+			services.AddScoped<IAuthorizationHandler, ContactIsOwnerAuthorizationHandler>();
+			services.AddScoped<IAuthorizationHandler, ContactAdministratorsAuthorizationHandler>();
+			services.AddScoped<IAuthorizationHandler, ContactManagerAuthorizationHandler>();
+
+		}
+
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -58,7 +75,7 @@ namespace AuthorizationExample
             {
                 app.UseExceptionHandler("/Error");
             }
-
+   
             app.UseStaticFiles();
 
             app.UseAuthentication();
