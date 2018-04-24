@@ -6,23 +6,37 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AuthorizationExample.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using AuthorizationExample.Authorization;
 
 namespace AuthorizationExample.Pages.Contacts
 {
-    public class IndexModel : PageModel
+    public class IndexModel : DI_BasePageModel
     {
-        private readonly AuthorizationExample.Data.ApplicationDbContext _context;
+		public IndexModel(ApplicationDbContext context, IAuthorizationService authorizationService, UserManager<ApplicationUser> userManager) : base(context, authorizationService, userManager)
+		{
+		}
 
-        public IndexModel(AuthorizationExample.Data.ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
-        public IList<Contact> Contact { get;set; }
+		public IList<Contact> Contact { get;set; }
 
         public async Task OnGetAsync()
         {
-            Contact = await _context.Contacts.ToListAsync();
+			var contacts = from c in Context.Contacts
+						   select c;
+
+			var isAuthorized = User.IsInRole(Constants.ContactManagersRole) ||
+							   User.IsInRole(Constants.ContactAdministratorsRole);
+
+			var currentUserId = UserManager.GetUserId(User);
+
+			if (!isAuthorized)
+			{
+				contacts = contacts.Where(c=>c.Status == ContactStatus.Approved
+				||c.OwnerID == currentUserId);
+			}
+
+            Contact = await contacts.ToListAsync();
         }
     }
 }

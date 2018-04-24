@@ -6209,7 +6209,7 @@
       ]
     },
     "Microsoft.Data.Edm/5.8.2": {
-      "sha512": "YqPWJ75vk/oCo4cE8UZl6yKQ48ciFF+m8puC2Bfp5IeoFmdumKFTElL6nESvZdKghXFCSRiDTD3GWWVR5JMRLA==",
+      "sha512": "P/d8DxA6MFHroBEn/jW0LMQSIKnsRRibrZtRCLfov2boQfrQ1R1BVgkJ5oIhcQsOm0l4POv+I2ny6RBsclNbOw==",
       "type": "package",
       "path": "microsoft.data.edm/5.8.2",
       "files": [
@@ -6273,7 +6273,7 @@
       ]
     },
     "Microsoft.Data.OData/5.8.2": {
-      "sha512": "e/ZnhR5h/nqG4qDIpoYXD6zuTqLw3ItO6RPjsaUrUqubt/wujbR373qzCtwJcXSdA6ic1ewEeM/3ni02Qttssw==",
+      "sha512": "oEIUtXcRiKogF0yZxA+QdgxoBJ34989qL/5xOSrTfxAhzNJV5Hw6DRdWgUCpeXFMoJUQx7ptbHCN+My/LCQfsg==",
       "type": "package",
       "path": "microsoft.data.odata/5.8.2",
       "files": [
@@ -7966,7 +7966,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "VVbvn0RKUaaYdhxVI+5quikz7eNen8rlitxHs0uwCwKT3oFKXipSrXYqYgA2iEzBKlBD7c54oGSv6nhXg0WyzA==",
+      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "files": [
@@ -7990,7 +7990,7 @@
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
-      "sha512": "UE7RQvN8qKhJ067S9WiR1p4s7OkhUaccWVg67cSVEvs1wJP4PELU1FgvWKoQ8F/yN+iO7PXakKZjMrQlzVj/mg==",
+      "sha512": "5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "type": "package",
       "path": "newtonsoft.json.bson/1.0.1",
       "files": [
@@ -8003,7 +8003,7 @@
       ]
     },
     "NuGet.Frameworks/4.0.0": {
-      "sha512": "uBu2N9HDvGHso7umfG1Abud0KDFgysp8FYwq3qMDhSXiW5+NIUPU0Q/A547Wt5FKcozq6H2WX+YBa1ejyKaKeA==",
+      "sha512": "WCkN68c8q+USG+Ot1MmBDH+9DUo5dk7UB0QDMiwCYhrH7ZoFLKFGGNzJ8C3LTR1DvB1LW9BOxKeznnZznKiCTA==",
       "type": "package",
       "path": "nuget.frameworks/4.0.0",
       "files": [
@@ -9294,7 +9294,7 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "rZOP+iRaabpnLYzt+H0R9HGG2P3frcjqOBix6r7guEhFe88XFBOLvIh3Z3vu/cb2MfzPxmT1iPouRwbsoTHOOw==",
+      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
@@ -9740,7 +9740,7 @@
       ]
     },
     "System.Interactive.Async/3.1.1": {
-      "sha512": "OMgAEMkuqmM4r2ZgIzGqQHiFezSjnpmxM9sbQOuKvdTY265ZVw+A6fCRXaaXXFiaYUjY9vW7Gne4m1GZxxsT+g==",
+      "sha512": "hZccYiIE5RS1/J9Tb/BNtosAGVggdlsJm4Ojdu+gDV0p4AIi+LUfUogMKkRacljQEJd2AG6vYzvcjhQFkqoZmw==",
       "type": "package",
       "path": "system.interactive.async/3.1.1",
       "files": [
@@ -11480,7 +11480,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "E44bIc3djyn6YePxzG0s+YwyDW6G4odVjjZnki4qkNOqW+IsEci64cWT00mxmbvbQ8RtGlvq4/Kh6M5IkueIxw==",
+      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -12053,7 +12053,7 @@
       ]
     },
     "System.Spatial/5.8.2": {
-      "sha512": "Lo7u2LFnqjNfePMZfbcAgK6XXrpiJGvB0YC5x2XYJYuPnVqRHREjwDmqcc2TZdGsTHVTg97nTeMH5d7sFeDc3g==",
+      "sha512": "0RfZZJ8RlrfjoBPAF6pczX4Nd2kyLM8EX1PCP5Rqs/jOhJBUPYhpXjIsVAYN7kocj9IJ9XoJWAxWgXIDtJY2Ag==",
       "type": "package",
       "path": "system.spatial/5.8.2",
       "files": [
@@ -13021,7 +13021,7 @@
       ]
     },
     "System.Xml.XPath/4.3.0": {
-      "sha512": "LQvJP6inrG/Nti5ZuUWXnQSmpgUaPTZFRCNJAtZNTCjEfzDh4+U/SYVxo5LkfeDfCxJ3bf3xj2KdwhOYbAp39A==",
+      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
       "type": "package",
       "path": "system.xml.xpath/4.3.0",
       "files": [
@@ -13058,7 +13058,7 @@
       ]
     },
     "System.Xml.XPath.XDocument/4.3.0": {
-      "sha512": "QSCQgvzonkgb1O05GE6BtlvFwvImUbIiFD4c3jwX5i+dmvAvSDCNknx3LFTAQ1QVz+gHHzcUYAsRfygzEZF+KA==",
+      "sha512": "jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "type": "package",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "files": [
@@ -13127,31 +13127,34 @@
   },
   "packageFolders": {
     "C:\\Users\\Feet\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\GitHub\\AuthorizationExample\\AuthorizationExample.csproj",
+      "projectUniqueName": "D:\\GitHub\\AuthorizationExample\\AuthorizationExample\\AuthorizationExample.csproj",
       "projectName": "AuthorizationExample",
-      "projectPath": "G:\\GitHub\\AuthorizationExample\\AuthorizationExample.csproj",
+      "projectPath": "D:\\GitHub\\AuthorizationExample\\AuthorizationExample\\AuthorizationExample.csproj",
       "packagesPath": "C:\\Users\\Feet\\.nuget\\packages\\",
-      "outputPath": "G:\\GitHub\\AuthorizationExample\\obj\\",
+      "outputPath": "D:\\GitHub\\AuthorizationExample\\AuthorizationExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Feet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Feet\\.dotnet\\NuGetFallbackFolder": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.cnblogs.com/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {

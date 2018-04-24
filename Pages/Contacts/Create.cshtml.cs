@@ -15,14 +15,17 @@ namespace AuthorizationExample.Pages.Contacts
 {
     public class CreateModel : DI_BasePageModel
     {
-		private readonly IModelMetadataProvider _modelMetadataProvider;
-		public CreateModel(ApplicationDbContext context, IAuthorizationService authorizationService, UserManager<ApplicationUser> userManager, IModelMetadataProvider modelMetadataProvider) : base(context, authorizationService, userManager)
+		public CreateModel(ApplicationDbContext context, IAuthorizationService authorizationService, UserManager<ApplicationUser> userManager) : base(context, authorizationService, userManager)
 		{
-			_modelMetadataProvider = modelMetadataProvider;
-			var sontactStatus = from ContactStatus s in Enum.GetValues(typeof(ContactStatus))
-						   select new { ID = (int)s, Name = s.ToString() };
+			var contactStatus = from ContactStatus s in Enum.GetValues(typeof(ContactStatus))
+						   select new { Key = (int)s, Value = s.ToString() };
 
-			ContactStatusList = sontactStatus.ToDictionary(keySelector=>keySelector.ID,KeyValuePair=>KeyValuePair.Name);
+			ContactStatusList = contactStatus.Select(r => new SelectListItem
+			{
+				Value = r.Key.ToString(),
+				Text = r.Value
+			});
+
 		}
 
 		public IActionResult OnGet()
@@ -34,7 +37,7 @@ namespace AuthorizationExample.Pages.Contacts
         public Contact Contact { get; set; }
 
 		[BindProperty]
-		public Dictionary<int,string> ContactStatusList { get; set; }
+		public IEnumerable<SelectListItem> ContactStatusList { get; set; }
 
 		public async Task<IActionResult> OnPostAsync()
         {
@@ -59,16 +62,5 @@ namespace AuthorizationExample.Pages.Contacts
 
             return RedirectToPage("./Index");
         }
-
-		public IEnumerable<SelectListItem> GetEnumSelectList<TEnum>() where TEnum : struct
-		{
-			var type = typeof(TEnum);
-			var metadata = _modelMetadataProvider.GetMetadataForType(type);
-			if (!metadata.IsEnum || metadata.IsFlagsEnum)
-			{
-			}
-
-			return metadata;
-		}
 	}
 }
