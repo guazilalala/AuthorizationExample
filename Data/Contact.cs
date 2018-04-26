@@ -26,8 +26,17 @@ namespace AuthorizationExample.Data
 
 	public enum ContactStatus
 	{
+		/// <summary>
+		/// 提交
+		/// </summary>
 		Submitted,
+		/// <summary>
+		/// 批准
+		/// </summary>
 		Approved,
+		/// <summary>
+		/// 拒绝
+		/// </summary>
 		Rejected
 	}
 }

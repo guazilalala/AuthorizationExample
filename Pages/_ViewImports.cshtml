@@ -3,3 +3,7 @@
 @using AuthorizationExample.Data
 @namespace AuthorizationExample.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using AuthorizationExample.Authorization
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService

@@ -12,10 +12,12 @@ using AuthorizationExample.Authorization;
 
 namespace AuthorizationExample.Pages.Contacts
 {
+	[Authorize(Policy = "ElevatedRights")]
     public class IndexModel : DI_BasePageModel
     {
 		public IndexModel(ApplicationDbContext context, IAuthorizationService authorizationService, UserManager<ApplicationUser> userManager) : base(context, authorizationService, userManager)
 		{
+			string.Join(",", new string[] { Constants.ContactAdministratorsRole });
 		}
 
 		public IList<Contact> Contact { get;set; }

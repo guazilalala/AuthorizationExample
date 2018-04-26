@@ -1,23 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using AuthorizationExample.Authorization;
 using AuthorizationExample.Data;
 using AuthorizationExample.Services;
 using Microsoft.AspNetCore.Authorization;
-using AuthorizationExample.Authorization;
-using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace AuthorizationExample
 {
-    public class Startup
+	public class Startup
     {
         public Startup(IConfiguration configuration)
         {
@@ -36,12 +32,21 @@ namespace AuthorizationExample
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+
+			//页面授权
 			services.AddMvc()
 				.AddRazorPagesOptions(options =>
 				{
+					//options.Conventions.AuthorizeFolder("/Contacts");
 					options.Conventions.AuthorizeFolder("/Account/Manage");
 					options.Conventions.AuthorizePage("/Account/Logout");
 				});
+
+			//基于策略角色授权
+			services.AddAuthorization(options =>
+			{
+				options.AddPolicy("ElevatedRights",policy=>policy.RequireRole(new string[] { Constants.ContactAdministratorsRole,Constants.ContactManagersRole}));
+			});
 
 			// Register no-op EmailSender used by account confirmation and password reset during development
 			// For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=532713
@@ -54,6 +59,7 @@ namespace AuthorizationExample
 			//					.Build();
 			//	config.Filters.Add(new AuthorizeFilter(policy));
 			//});
+
 
 			// Authorization handlers
 			services.AddScoped<IAuthorizationHandler, ContactIsOwnerAuthorizationHandler>();
